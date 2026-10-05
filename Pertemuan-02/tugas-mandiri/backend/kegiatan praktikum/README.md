@@ -1,76 +1,129 @@
-# Kegiatan Praktikum — Tugas Mandiri 3
+# Kegiatan Praktikum Pertemuan 02
 
-Folder ini berisi dokumentasi hasil pengujian **HTTP Request dan Response** menggunakan **Postman** dengan layanan **HTTPBin**.
+## Judul
 
-## Pengujian yang Dilakukan
+Pengujian HTTP Method, HTTP Status Code, serta Request & Response menggunakan Postman dan HTTPBin
 
-Pada Tugas Mandiri 3 dilakukan pengujian terhadap dua endpoint HTTPBin, yaitu:
+## Tujuan
 
-1. `GET /get`
-2. `GET /headers`
+Melakukan pengujian HTTP Method, HTTP Status Code, serta Request & Response menggunakan Postman untuk memahami proses komunikasi HTTP antara client dan server.
 
----
+Pengujian dilakukan menggunakan HTTPBin sebagai layanan untuk melihat data request yang dikirim oleh client serta memahami status code dan response yang diberikan oleh server.
 
-## 1. Pengujian GET /get
+## Cara Menjalankan
 
-Endpoint yang digunakan:
+Pengujian dilakukan menggunakan aplikasi Postman dengan langkah-langkah berikut:
 
-```text
-GET https://httpbin.org/get
-```
+1. Membuka aplikasi Postman.
+2. Membuat request HTTP sesuai dengan pengujian yang dilakukan.
+3. Memasukkan URL HTTPBin.
+4. Mengatur method, headers, dan parameter sesuai kebutuhan pengujian.
+5. Mengirim request menggunakan tombol **Send**.
+6. Mengamati status code dan response yang diberikan oleh server.
+7. Menyimpan screenshot hasil pengujian sebagai bukti pengerjaan.
 
-Pengujian menggunakan query parameter:
+## Hasil
 
-| Key | Value |
-|---|---|
-| `nama` | `Uut` |
-| `kelas` | `PBP` |
+### 1. Pengujian HTTP Method
 
-Request yang dikirim:
+Pengujian HTTP Method dilakukan menggunakan beberapa method pada HTTPBin.
 
-```text
-GET https://httpbin.org/get?nama=Uut&kelas=PBP
-```
+#### Pengujian GET
 
-Hasil pengujian menunjukkan bahwa server berhasil menerima query parameter dan menampilkannya pada bagian `args` dalam response.
+Request GET berhasil dikirim ke HTTPBin dan menghasilkan response dari server.
 
-### Screenshot
+**Bukti hasil pengujian GET:**
 
-![Hasil pengujian GET /get](tm3-get.png)
+[![Hasil Pengujian GET](./tm1-fungsi-get.png)](./tm1-fungsi-get.png)
 
-**Gambar 1. Pengujian GET /get dengan query parameter nama dan kelas.**
+#### Pengujian PUT
 
----
+Request PUT berhasil dikirim ke HTTPBin dan menghasilkan response dari server.
 
-## 2. Pengujian GET /headers
+**Bukti hasil pengujian PUT:**
 
-Endpoint yang digunakan:
+[![Hasil Pengujian PUT](./tm1-fungsi-put.png)](./tm1-fungsi-put.png)
 
-```text
-GET https://httpbin.org/headers
-```
+### 2. Pengujian HTTP Status Code
 
-Pengujian ini tidak menggunakan query parameter maupun request body.
+Pengujian HTTP Status Code dilakukan menggunakan endpoint:
 
-Hasil pengujian menunjukkan bahwa server menampilkan HTTP header yang diterima dari client, seperti:
+`https://httpbin.org/status/:code`
 
-- `Accept`
-- `Accept-Encoding`
-- `Host`
-- `User-Agent`
+Method yang digunakan adalah **GET**.
 
-Header `User-Agent` menunjukkan bahwa request dikirim menggunakan Postman.
+Pengujian dilakukan dengan beberapa status code untuk melihat response yang diberikan oleh server.
 
-### Screenshot
+#### Status Code 200
 
-![Hasil pengujian GET /headers](tm3-headers.png)
+[![Hasil Pengujian Status Code 200](./tm2-status-200.png)](./tm2-status-200.png)
 
-**Gambar 2. Pengujian GET /headers untuk melihat HTTP header.**
+#### Status Code 201
 
----
+[![Hasil Pengujian Status Code 201](./tm2-status-201.png)](./tm2-status-201.png)
 
-## Kesimpulan
+#### Status Code 400
 
-Berdasarkan kegiatan praktikum, endpoint `/get` dapat digunakan untuk melihat query parameter yang dikirim melalui URL. Sementara itu, endpoint `/headers` dapat digunakan untuk melihat HTTP header yang diterima oleh server.
+[![Hasil Pengujian Status Code 400](./tm2-status-400.png)](./tm2-status-400.png)
 
-Pengujian ini membantu memahami bagaimana **request** dikirim dari client menggunakan Postman dan bagaimana **response** diberikan kembali oleh server HTTPBin.
+### 3. Pengujian Request & Response
+
+Pengujian Request dan Response dilakukan menggunakan HTTPBin untuk memahami query parameter dan HTTP Headers.
+
+#### Pengujian GET dengan Query Parameter
+
+Request yang digunakan:
+
+`https://httpbin.org/get?nama=Uut&kelas=PBP`
+
+Pengujian ini digunakan untuk melihat query parameter yang dikirim melalui URL.
+
+[![Hasil Pengujian GET dengan Query Parameter](./tm3-get.png)](./tm3-get.png)
+
+#### Pengujian HTTP Headers
+
+Request yang digunakan:
+
+`https://httpbin.org/headers`
+
+Pengujian ini digunakan untuk melihat HTTP Headers yang diterima oleh server.
+
+[![Hasil Pengujian HTTP Headers](./tm3-headers.png)](./tm3-headers.png)
+
+## Lokasi Bukti
+
+Bukti screenshot hasil pengujian disimpan pada folder:
+
+`Pertemuan-02/tugas-mandiri/backend/kegiatan praktikum/`
+
+### Bukti TM-1
+
+- [tm1-fungsi-get.png](./tm1-fungsi-get.png)
+- [tm1-fungsi-put.png](./tm1-fungsi-put.png)
+
+### Bukti TM-2
+
+- [tm2-status-200.png](./tm2-status-200.png)
+- [tm2-status-201.png](./tm2-status-201.png)
+- [tm2-status-400.png](./tm2-status-400.png)
+
+### Bukti TM-3
+
+- [tm3-get.png](./tm3-get.png)
+- [tm3-headers.png](./tm3-headers.png)
+
+## Laporan Tugas
+
+### TM-1 — HTTP Method
+
+Laporan Tugas Mandiri 1 berada pada file:
+
+`tugas-mandiri-1-http-method.md`
+
+### TM-2 — HTTP Status Code
+
+[tugas-mandiri-2-status-code.md](../tugas-mandiri-2-status-code.md)
+
+### TM-3 — Request & Response
+
+[tugas-mandiri-3-request-response.md](../tugas-mandiri-3-request-response.md)
