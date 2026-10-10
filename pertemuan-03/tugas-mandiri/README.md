@@ -87,7 +87,7 @@ Screenshot disimpan di folder `frontend/web/screenshots/`.
 
 ---
 
-## TM4 — Analisis JWT
+**## TM4 — Analisis JWT**
 
 - **Status:** Selesai
 - **Laporan:** `backend/tugas-mandiri-4-jwt.md`
@@ -97,15 +97,20 @@ Screenshot disimpan di folder `frontend/web/screenshots/`.
   - `backend/screenshots/tm4-jwt-token-diubah-401.png`
 - **Ringkasan:** Mengamati struktur JWT yang terdiri dari header, payload, dan signature serta menguji respons autentikasi terhadap token asli dan token yang diubah.
 
-## TM5 — Analisis Hash Password dengan bcrypt
-
-**Status:** Belum dikerjakan.
-
-File yang akan dibuat:
-
-- `backend/tugas-mandiri-5-hash.md`
-
 ---
+
+**## TM5 — Analisis Hash Password dengan bcrypt**
+
+- **Status:** Selesai
+- **Laporan:** `backend/tugas-mandiri-5-hash.md`
+- **Isi pengerjaan:**
+  - Membuat dua hash bcrypt dari kata sandi yang sama dengan cost factor 10.
+  - Menjelaskan perbedaan hashing dan enkripsi.
+  - Menganalisis fungsi salt, cost factor, `bcrypt.compare`, dan rainbow table.
+  - Menjelaskan pentingnya menjaga kerahasiaan `JWT_SECRET`.
+  - Memeriksa status pelacakan `.env` dan mencari pola token JWT.
+- **Hasil pemeriksaan:** Tidak ditemukan file `backend/.env` yang terlacak pada lokasi yang diperiksa dan tidak ditemukan teks yang cocok dengan pola JWT di folder `pertemuan-03`.
+
 
 ## Struktur Folder
 
@@ -113,12 +118,23 @@ File yang akan dibuat:
 tugas-mandiri/
 ├── README.md
 ├── backend/
+│   ├── screenshots/
+│   │   ├── tm4-jwt-token-asli-200.png
+│   │   ├── tm4-jwt-payload.png
+│   │   └── tm4-jwt-token-diubah-401.png
 │   ├── tugas-mandiri-3-auth-matrix.md
 │   ├── tugas-mandiri-4-jwt.md
 │   └── tugas-mandiri-5-hash.md
 └── frontend/
     └── web/
         ├── screenshots/
+        │   ├── tm1-component-laptop.png
+        │   ├── tm1-component-360.png
+        │   ├── tm1-utility-laptop.png
+        │   ├── tm1-utility-360.png
+        │   ├── tm2-layout-laptop.png
+        │   ├── tm2-layout-360.png
+        │   └── tm2-layout-360-bawah.png
         ├── foto-barrotut.jpg
         ├── tugas-mandiri-1-component.html
         ├── tugas-mandiri-1-utility.html
