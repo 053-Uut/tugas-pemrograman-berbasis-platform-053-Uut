@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TM2 - Layout Responsif</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen bg-gray-100 text-gray-800">
+
+    <!-- Navbar -->
+    <nav class="bg-blue-700 text-white shadow-md">
+        <div class="mx-auto flex max-w-6xl flex-col gap-3 px-4 py-4 md:flex-row md:items-center md:justify-between">
+            <h1 class="text-xl font-bold">KampusKu</h1>
+            <div class="flex flex-wrap gap-4">
+                <a href="#beranda" class="hover:text-yellow-300">Beranda</a>
+                <a href="#layanan" class="hover:text-yellow-300">Layanan</a>
+                <a href="#tentang" class="hover:text-yellow-300">Tentang</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <header id="beranda" class="bg-blue-600 px-4 py-16 text-center text-white md:py-24">
+        <div class="mx-auto max-w-3xl">
+            <h2 class="mb-4 text-3xl font-bold md:text-5xl">
+                Selamat Datang di KampusKu
+            </h2>
+            <p class="mb-6 text-base md:text-lg">
+                Temukan informasi dan layanan akademik untuk mendukung kegiatan belajar mahasiswa.
+            </p>
+            <a href="#layanan"
+               class="inline-block rounded-lg bg-yellow-400 px-6 py-3 font-semibold text-blue-900 transition hover:bg-yellow-300">
+                Jelajahi Layanan
+            </a>
+        </div>
+    </header>
+
+    <!-- Tiga Kartu -->
+    <main id="layanan" class="mx-auto max-w-6xl px-4 py-12">
+        <h2 class="mb-8 text-center text-2xl font-bold md:text-3xl">
+            Layanan Mahasiswa
+        </h2>
+
+        <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+
+            <!-- Kartu 1 -->
+            <article class="rounded-xl bg-white p-6 shadow-md transition hover:-translate-y-1 hover:shadow-xl">
+                <div class="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-blue-100 text-2xl">
+                    📚
+                </div>
+                <h3 class="mb-3 text-xl font-bold">Materi Kuliah</h3>
+                <p class="mb-5 text-gray-600">
+                    Akses materi pembelajaran untuk membantu memahami mata kuliah.
+                </p>
+                <a href="#tentang" class="font-semibold text-blue-600 hover:text-blue-800">
+                    Pelajari lebih lanjut →
+                </a>
+            </article>
+
+            <!-- Kartu 2 -->
+            <article class="rounded-xl bg-white p-6 shadow-md transition hover:-translate-y-1 hover:shadow-xl">
+                <div class="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-green-100 text-2xl">
+                    🗓️
+                </div>
+                <h3 class="mb-3 text-xl font-bold">Jadwal Kuliah</h3>
+                <p class="mb-5 text-gray-600">
+                    Lihat informasi jadwal perkuliahan agar kegiatan lebih teratur.
+                </p>
+                <a href="#tentang" class="font-semibold text-blue-600 hover:text-blue-800">
+                    Lihat jadwal →
+                </a>
+            </article>
+
+            <!-- Kartu 3 -->
+            <article class="rounded-xl bg-white p-6 shadow-md transition hover:-translate-y-1 hover:shadow-xl">
+                <div class="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-purple-100 text-2xl">
+                    👥
+                </div>
+                <h3 class="mb-3 text-xl font-bold">Komunitas</h3>
+                <p class="mb-5 text-gray-600">
+                    Kenali komunitas mahasiswa dan temukan kesempatan berkolaborasi.
+                </p>
+                <a href="#tentang" class="font-semibold text-blue-600 hover:text-blue-800">
+                    Kenali komunitas →
+                </a>
+            </article>
+
+        </div>
+    </main>
+
+    <!-- Tentang -->
+    <section id="tentang" class="bg-white px-4 py-10 text-center">
+        <h2 class="mb-3 text-2xl font-bold">Tentang KampusKu</h2>
+        <p class="mx-auto max-w-2xl text-gray-600">
+            KampusKu merupakan contoh halaman informasi mahasiswa yang dirancang
+            menggunakan Tailwind CSS dengan tampilan responsif.
+        </p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 px-4 py-6 text-center text-white">
+        <p>&copy; 2026 KampusKu. Dibuat untuk Tugas Mandiri TM2.</p>
+    </footer>
+
+</body>
+</html>
