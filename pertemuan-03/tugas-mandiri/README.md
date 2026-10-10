@@ -89,13 +89,13 @@ Screenshot disimpan di folder `frontend/web/screenshots/`.
 
 ## TM4 — Analisis JWT
 
-**Status:** Belum dikerjakan.
-
-File yang akan dibuat:
-
-- `backend/tugas-mandiri-4-jwt.md`
-
----
+- **Status:** Selesai
+- **Laporan:** `backend/tugas-mandiri-4-jwt.md`
+- **Bukti pengujian:**
+  - `backend/screenshots/tm4-jwt-token-asli-200.png`
+  - `backend/screenshots/tm4-jwt-payload.png`
+  - `backend/screenshots/tm4-jwt-token-diubah-401.png`
+- **Ringkasan:** Mengamati struktur JWT yang terdiri dari header, payload, dan signature serta menguji respons autentikasi terhadap token asli dan token yang diubah.
 
 ## TM5 — Analisis Hash Password dengan bcrypt
 
