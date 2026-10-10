@@ -37,3 +37,14 @@ Untuk halaman sederhana atau pembuatan tampilan dengan cepat, saya lebih memilih
 ## 5. Kesimpulan
 
 Kedua pendekatan dapat digunakan untuk membuat tampilan kartu yang sama. Component CSS lebih terstruktur untuk pengelolaan style yang berulang, sedangkan utility classes lebih cepat dan praktis untuk membuat atau mengubah tampilan secara langsung pada HTML.
+
+## 6. Bukti Pengerjaan
+
+Screenshot hasil pengujian kedua versi disimpan di folder `screenshots/` pada folder `frontend/web/`.
+
+- `screenshots/tm1-component-laptop.png`
+- `screenshots/tm1-component-360.png`
+- `screenshots/tm1-utility-laptop.png`
+- `screenshots/tm1-utility-360.png`
+
+Screenshot tersebut menunjukkan hasil tampilan kartu profil menggunakan component CSS dan utility classes pada layar laptop serta ukuran layar 360 piksel.
